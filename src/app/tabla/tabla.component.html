@@ -1,0 +1,15 @@
+<div class="main container">
+  <h1>Ofertas</h1>
+
+  <div class="card oferta-card" *ngFor="let oferta of ofertas">
+    <div class="card-header">
+      {{oferta.name}}
+    </div>
+    <div class="card-body">
+      <h4 class="card-title">{{oferta.name}}</h4>
+      <p class="card-text">Precio: {{oferta.value}}</p>
+      <a routerLink="/detail/{{oferta.id}}" class="btn btn-primary">Detalle</a>
+    </div>
+  </div>
+
+</div>
